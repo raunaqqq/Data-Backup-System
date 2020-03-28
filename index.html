@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Oil and Natural Gas Corporation</title>
+	<link rel="stylesheet" type="text/css" href="./web/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./web/style.css">
+	<link rel="stylesheet" type="text/css" href="./web/css/all.css">
+	<script>window.$ = window.jQuery = require('./web/jquery-3.4.1.min.js');</script>
+	<script src="./web/popper.min.js"></script>
+	<script src="./web/js/bootstrap.min.js"></script>
+	<script src='./node_modules/@widgetjs/tree/dist/tree.min.js'></script>
+	<script>require('./web/render.js')</script>
+</head>
+
+<body>
+	<div class="row no-gutters">
+		<div class="col no-gutters">
+			<div class="leftside">
+				<img src="web/ongcpic.png" id="picture">
+			</div>
+		</div>
+
+		<div class="col-9 no-gutters">
+			<div class="rightside">
+				<h1 class="display-3" id="data_backup_system">GEOPIC Data Backup System</h1>
+				<!--Card 1 Contents-->
+				<div class="card">
+					<div>
+						<h5 class="card-header">Please Select a drive to backup to
+							<a role="button" id="card1_button">
+								<i id="card1_icon" class="fas fa-sort-up rotate"></i>
+							</a>
+						</h5>
+					</div>
+					<div id="card1" class="card-body">
+						<h5 class="card-title">Available Drives</h5>
+						<div id="drive_list">
+						</div>
+						<a href="#" id="drive_sel_button" class="btn btn-primary">Select</a>
+					</div>
+				</div>
+				<!--Card 2 Contents-->
+				<div class="card">
+					<div>
+						<h5 class="card-header">Please Select the number and content of TAR Files
+							<a role="button" id="card2_button">
+								<i id="card2_icon" class="fas fa-sort-up rotate"></i>
+							</a>
+						</h5>
+					</div>
+					<div id="card2" class="card-body">
+						<div class="input-group mb-3">
+							<div class="input-group-prepend">
+							  <span class="input-group-text" id="prepend"><i class="fas fa-hdd"></i></span>
+							</div>
+							<input type="text" class="form-control" id="noOfTarFiles" placeholder="Number of TAR Files" aria-label="noOfTarFiles" aria-describedby="basic-addon1">
+							<div class="input-group-append">
+								<span class="input-group-text" id="append"><button id="tarFileButton" href="#" class ="btn btn-primary">Continue</button></span>
+							  </div>  
+						</div>
+					<div id="tabs">
+
+					</div>
+					<div id="tabContent" class="tab-content">
+
+					</div>
+						<a href="#" id="backup_button" class="btn btn-primary"><i class="fas fa-file-archive"></i>Backup</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div id="errorModal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalTitle">Error</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body" id="modalText">
+					There was an error reading the list of drives. Please check the file containing the drive names and
+					restart the application.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div id="driveModal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalTitle">Please select the drive to choose files from</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body" id="driveModalRadio">
+					
+				</div>
+				<div class="modal-footer">
+					<button type="button" id="drive_from_button" class="btn btn-primary">Select</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

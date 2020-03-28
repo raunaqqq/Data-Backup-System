@@ -1,0 +1,23 @@
+{
+  "name": "ongc_data_backup",
+  "author": "Raunaq Pahwa <raunaqpahwa@gmail.com>",
+  "homepage": "http://ongc.com",
+  "version": "1.0.0",
+  "description": "A Linux based data backup system for the Oil and Natural Gas Corporation",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "electron": "^5.0.5"
+  },
+  "dependencies": {
+    "@widgetjs/tree": "^1.7.6",
+    "bootstrap": "^4.3.1",
+    "custom-electron-titlebar": "^3.0.10",
+    "dataframe-js": "^1.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  }
+}

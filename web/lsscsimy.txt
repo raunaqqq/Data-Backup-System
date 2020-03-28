@@ -1,0 +1,5 @@
+[7:0:4:0]	tape	HP	Ultrium 4-SCSI	H14H	/dev/st4
+[7:0:5:0]	tape	HP	Ultrium 4-SCSI	H14H	/dev/st5
+[7:0:8:0]	tape	IBM	03592E06	2883	/dev/st8
+[9:0:1:0]	tape	IBM	ULTRIUM-HH6	H991	/dev/st11
+[10:0:1:0]	tape	TANDBERG	LTO-6 HH	3319	/dev/st10
