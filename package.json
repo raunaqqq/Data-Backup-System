@@ -18,6 +18,7 @@
     "custom-electron-titlebar": "^3.0.10",
     "dataframe-js": "^1.4.1",
     "jquery": "^3.4.1",
+    "minimist": "^1.2.5",
     "popper.js": "^1.15.0"
   }
 }
